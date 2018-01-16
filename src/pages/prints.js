@@ -100,7 +100,7 @@ class Prints extends React.Component {
         <Header />
         <TOC
           image={yellow}
-          pathname={this.props.location.pathname}
+          pathname={this.props.location && this.props.location.pathname}
         />
         <div
           css={{

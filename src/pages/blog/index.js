@@ -60,7 +60,7 @@ class Blog extends React.Component {
         <Header />
         <TOC
           image={succulents}
-          pathname={this.props.location.pathname}
+          pathname={this.props.location && this.props.location.pathname}
         />
         <div css={{...styles.outer }}>
            {postList}

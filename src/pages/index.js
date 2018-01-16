@@ -16,7 +16,7 @@ class IndexPage extends React.Component {
       <div css={applicationStyles.outer} >
         <Header />
         <TOC
-          pathname={this.props.location.pathname}
+          pathname={this.props.location && this.props.location.pathname}
         />
         <div 
           css={{
