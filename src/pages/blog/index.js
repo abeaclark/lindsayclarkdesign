@@ -2,7 +2,7 @@ import React from 'react'
 import Header from 'baseComponents/header'
 import { fonts, colors, applicationStyles, metrics } from 'themes'
 import TOC from 'baseComponents/toc'
-import succulents from 'media/succulents.png'
+import succulents from 'media/succulents-min.png'
 
 const styles = {
   outer: {

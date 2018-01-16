@@ -6,7 +6,7 @@ import Header from 'baseComponents/header'
 import { fonts, colors, applicationStyles, metrics } from '../themes'
 import { navigateTo } from "gatsby-link"
 import TOC from 'baseComponents/toc'
-import yellow from 'media/yellow.png'
+import yellow from 'media/yellow-min.png'
 import { MdFileDownload, } from 'react-icons/lib/md';
 import cuddle from 'media/prints/CUDDLE.png'
 import nice from 'media/prints/NICE.png'

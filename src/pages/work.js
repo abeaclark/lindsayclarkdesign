@@ -6,7 +6,7 @@ import Header from 'baseComponents/header'
 import { fonts, colors, applicationStyles, metrics } from '../themes'
 import { navigateTo } from "gatsby-link"
 import TOC from 'baseComponents/toc'
-import sunset from 'media/sunset.png'
+import sunset from 'media/sunset-min.png'
 
 const styles = {
 }

@@ -1,6 +1,6 @@
 import React from 'react'
 import { metrics, colors } from 'themes'
-import hills from 'media/hills.png'
+import hills from 'media/hills-min.png'
 import Link from 'gatsby-link'
 import presets from 'lib/presets'
 
