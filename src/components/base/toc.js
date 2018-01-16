@@ -3,6 +3,7 @@ import { metrics, colors } from 'themes'
 import hills from 'media/hills-min.png'
 import Link from 'gatsby-link'
 import presets from 'lib/presets'
+import ImageHolder from './imageHolder'
 
 const styles = {
   outer: {
@@ -60,7 +61,7 @@ const TOC = ({ pathname=null, image=hills }) =>{
 
   return (
     <div css={{...styles.outer }}>
-      <img src={image} css={{ width: '100%', maxWidth: metrics.maxWidth }}/>
+      <ImageHolder src={image} css={{ width: '100%', maxWidth: metrics.maxWidth }}/>
       <div css={styles.linksContainer}>
         <Link css={{ ...styles.links, fontSize: active === 'work' ? '24px' : null }} to="/work">WORK</Link>
         <Link css={{ ...styles.links, fontSize: active === 'prints' ? '24px' : null }} to="/prints">PRINTS</Link>
