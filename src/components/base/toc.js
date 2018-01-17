@@ -1,6 +1,6 @@
 import React from 'react'
 import { metrics, colors } from 'themes'
-import hills from 'media/hills-min.png'
+import sf from 'media/sf-min.png'
 import Link from 'gatsby-link'
 import presets from 'lib/presets'
 import ImageHolder from './imageHolder'
@@ -9,7 +9,7 @@ const styles = {
   outer: {
     width: "100%",
     maxWidth: metrics.maxWidth,
-    position: 'relative'
+    position: 'relative',
   },
   linksContainer: {
     display: 'flex',
@@ -22,6 +22,7 @@ const styles = {
     flexDirection: 'row',
   },
   links: {
+    fontFamily: 'Josefin Sans',
     display: 'flex',
     fontWeight: 'bold',
     flex: 0.33,
@@ -44,7 +45,7 @@ const styles = {
 }
 
 
-const TOC = ({ pathname=null, image=hills }) =>{
+const TOC = ({ pathname=null, image=sf }) =>{
   let active
   if (pathname) {
     if (/blog/g.test(pathname)){

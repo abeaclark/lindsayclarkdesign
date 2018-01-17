@@ -1,4 +1,5 @@
 import { fontFamilies } from './fonts'
+import colors from './colors'
 
 export default {
     outer: {
@@ -20,5 +21,27 @@ export default {
         display: 'flex',
         flex: 1,
         flexDirection: 'column',
+    },
+    link: {
+        color: colors.darkGrey,
+        textDecoration: 'none',
+        fontFamily: 'Josefin Sans',
+        fontWeight: 'light',
+        borderBottom: `1px solid ${colors.lightGrey}`,
+        ':hover': {
+            color: colors.lightGrey,
+          textDecoration: 'none',
+          borderBottom: `1px solid ${colors.lightGrey}`,
+        },
+        ':active': {
+          color: colors.lightGrey,
+          textDecoration: 'none',
+          borderBottom: `1px solid ${colors.lightGrey}`,
+        },
+        ':focus': {
+          color: colors.lightGrey,
+          textDecoration: 'none',
+          borderBottom: `1px solid ${colors.lightGrey}`,
+        },
     },
 }

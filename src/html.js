@@ -24,7 +24,7 @@ module.exports = class HTML extends React.Component {
       <html>
         <head>
           <link
-            href={'https://fonts.googleapis.com/css?family=Josefin+SansJosefin+Sans:100,400,700'
+            href={'https://fonts.googleapis.com/css?family=Josefin+SansJosefin+Sans:100,400,700|Nunito:300,600'
             rel='stylesheet'
           />
           <link rel="apple-touch-icon" sizes="57x57" href="/apple-icon-57x57.png">

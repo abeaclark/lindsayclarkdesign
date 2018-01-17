@@ -13,6 +13,9 @@ const styles = {
     color: colors.darkGrey,
     textDecoration: 'none',
     fontSize: '30px',
+    fontFamily: 'Josefin Sans !important',
+    fontWeight: 'normal !important',
+    border: '0px !important',
     [presets.mobile]: {
       fontSize: "48px",
     }

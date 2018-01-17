@@ -1,12 +1,15 @@
 import React from 'react'
 import { applicationStyles } from 'themes'
 import MainHelmet from 'components/base/mainHelmet'
+import Header from 'components/base/header'
 import './avenir-white.css'
+import { Post } from 'pages/blog/index'
 
 const styles = {
   image: {
     width: '100%',
     maxWidth: 500,
+    border: '0px',
   },
 }
 
@@ -48,7 +51,8 @@ class BlogTemplate extends React.Component {
               }`
             }}
           />
-          <img src={post.frontmatter.image} css={styles.image} />
+          <Header />
+          { Post({ data: post }) }
           <div dangerouslySetInnerHTML={{ __html: post.html }} />
         </div>
       </div>
@@ -72,7 +76,7 @@ export const pageQuery = graphql`
         frontmatter {
           title
           image
-          date
+          date(formatString: "M.D.YYYY")
           path
         }
       }

@@ -15,38 +15,52 @@ const styles = {
   },
   postContainer: {
     width: '100%',
-    marginTop: '30px',
     paddingHorizontal: '80px',
     maxWidth: metrics.maxWidth,
     cursor: 'pointer',
     textDecoration: 'none',
     color: colors.darkGrey,
-    marginBottom: 40,
+    position: 'relative',
+    fontFamily: 'josfin sans',
+    fontWeight: 'normal !important',
   },
   image: {
     width: '100%',
     maxWidth: metrics.maxWidth,
   },
   textHolder: {
+    position: 'absolute',
     padding: 20,
-    paddingTop: 5,
   }
 }
 
-const post = (data) => {
-  return(
-    <a href={data.frontmatter.path} css={styles.postContainer}>
+export const Post = ({ data, shouldLink=false} ) => {
+  const contents = (
+    <span>
       <div css={styles.textHolder}>
         <div css={{ fontSize: '20px', margin: 0, padding: 0 }}>
-          {data.frontmatter.title.toUpperCase()}
+          {data.frontmatter.title}
         </div>
-        <p css={{ color: colors.grey, fontSize: '15px', margin: 0, padding: 0, fontWeight: '100', marginBottom: '10px' }}>
+        <div css={{ color: colors.darkGrey, fontSize: '15px', margin: 0, padding: 0, fontWeight: '100', marginBottom: '10px' }}>
           {data.frontmatter.date}
-        </p>
-        <img src={data.frontmatter.image} css={styles.image} />
-        <div css={{ borderBottom: `1px solid ${colors.lightGrey}`, marginTop: '10px' }}/>
+        </div>
       </div>
-    </a>
+      <img src={data.frontmatter.image} css={styles.image} />
+    </span>
+  )
+  return(
+    <div css={{ marginTop: shouldLink ? '30px' : 0 }}>
+      {shouldLink &&
+        <a href={data.frontmatter.path} css={styles.postContainer}>
+          {contents}
+        </a>
+      }
+      {!shouldLink &&
+        <div css={{...styles.postContainer, cursor: 'normal'}}>
+          {contents}
+        </div>
+      }
+    </div>
   )
 }
 
@@ -54,7 +68,7 @@ const post = (data) => {
 class Blog extends React.Component {
   render() {
     const { allMarkdownRemark } = this.props.data
-    const postList = allMarkdownRemark.edges.map(({ node }) => post(node))
+    const postList = allMarkdownRemark.edges.map(({ node }) => Post({data: node, shouldLink: true}))
     return (
       <div css={applicationStyles.outer} >
         <Header />

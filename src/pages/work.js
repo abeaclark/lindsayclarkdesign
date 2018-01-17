@@ -7,8 +7,15 @@ import { fonts, colors, applicationStyles, metrics } from '../themes'
 import { navigateTo } from "gatsby-link"
 import TOC from 'baseComponents/toc'
 import sunset from 'media/sunset-min.png'
+import krasa from 'media/work/krasa.png'
+import oncallogy from 'media/work/oncallogy.png'
 
 const styles = {
+  img: {
+    width: '100%',
+    maxWidth: metrics.maxWidth,
+    marginTop: '40px',
+  }
 }
 
 class Prints extends React.Component {
@@ -20,6 +27,8 @@ class Prints extends React.Component {
           image={sunset}
           pathname={this.props.location && this.props.location.pathname}
         />
+        <img src={krasa} css={styles.img} />
+        <img src={oncallogy} css={styles.img} />
       </div>
     )
   }

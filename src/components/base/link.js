@@ -1,41 +1,18 @@
 import React from 'react'
 import Headroom from 'react-headroom'
 import Link from 'gatsby-link'
-import { fonts, colors } from '../../themes'
-
-const styles = {
-  link: {
-  	color: colors.darkGrey,
-  	textDecoration: 'none',
-    borderBottom: `1px solid ${colors.lightGrey}`,
-  	':hover': {
-  		color: colors.lightGrey,
-      textDecoration: 'none',
-      borderBottom: `1px solid ${colors.lightGrey}`,
-  	},
-    ':active': {
-      color: colors.lightGrey,
-      textDecoration: 'none',
-      borderBottom: `1px solid ${colors.lightGrey}`,
-    },
-    ':focus': {
-      color: colors.lightGrey,
-      textDecoration: 'none',
-      borderBottom: `1px solid ${colors.lightGrey}`,
-    },
-  },
-}
+import { fonts, colors, applicationStyles } from '../../themes'
 
 const StyledLink = ({ css, children, href, ...props }) => {
   if (href) {
     return (
-      <a href={href} target="blank" css={[styles.link, css]}>
+      <a href={href} target="blank" css={[applicationStyles.link, css]}>
         {children}
       </a>
     )
   }
   return (
-    <Link {...props} css={[styles.link, css]}>
+    <Link {...props} css={[applicationStyles.link, css]}>
       {children}
     </Link>
   )

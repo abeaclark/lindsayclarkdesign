@@ -24,27 +24,27 @@ const styles = {
 
 const prints = [
   {
-    title: 'Nice',
+    title: 'be nice',
     image: nice,
   },
   {
-    title: 'Cuddle',
+    title: "let's cuddle",
     image: cuddle,
   },
   {
-    title: 'Ocean',
+    title: 'the ocean',
     image: ocean,
   },
   {
-    title: 'SF',
+    title: 'san francisco',
     image: sf,
   },
   {
-    title: 'Time',
+    title: 'ordinary',
     image: time,
   },
   {
-    title: 'Women',
+    title: 'strong women',
     image: women,
   },
 ]
@@ -77,7 +77,9 @@ const Print = ({image, title}) => (
           bottom: '10px',
         }}
       >
-        <p>
+        <p
+          css={{fontFamily: 'Nunito', fontWeight: 'light'}}
+        >
           {title}
         </p>
         <a
