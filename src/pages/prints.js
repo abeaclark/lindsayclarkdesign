@@ -14,6 +14,12 @@ import ocean from 'media/prints/OCEAN.png'
 import sf from 'media/prints/SF.png'
 import time from 'media/prints/TIME.png'
 import women from 'media/prints/WOMEN.png'
+import brooklyn from 'media/prints/brooklyn.jpg'
+import chenery from 'media/prints/chenery-street.jpg'
+import vernazza from 'media/prints/vernazza-italy.jpg'
+import verona from 'media/prints/verona-italy.jpg'
+import taraval from 'media/prints/taraval-street.jpg'
+import taravalII from 'media/prints/taraval-street-II.jpg'
 
 const styles = {
   image: {
@@ -28,12 +34,24 @@ const prints = [
     image: nice,
   },
   {
-    title: "let's cuddle",
-    image: cuddle,
+    title: 'strong women',
+    image: women,
   },
   {
     title: 'the ocean',
     image: ocean,
+  },
+  {
+    title: 'vernazza, italy',
+    image: vernazza,
+  },
+  {
+    title: 'brooklyn',
+    image: brooklyn,
+  },
+  {
+    title: 'chenery street',
+    image: chenery,
   },
   {
     title: 'san francisco',
@@ -44,8 +62,20 @@ const prints = [
     image: time,
   },
   {
-    title: 'strong women',
-    image: women,
+    title: "let's cuddle",
+    image: cuddle,
+  },
+  {
+    title: 'taraval street',
+    image: taraval,
+  },
+  {
+    title: 'taraval street II',
+    image: taravalII,
+  },
+  {
+    title: 'verona, italy',
+    image: verona,
   },
 ]
 
