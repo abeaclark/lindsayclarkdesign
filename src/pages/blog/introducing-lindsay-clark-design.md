@@ -1,6 +1,6 @@
 ---
 title: Introducing lindsay clark design
-date: "2018-01-16"
+date: "2018-01-05"
 path: "/blog/introducing-lindsay-clark-design/"
 image: "/media/lindsay-min.png"
 ---

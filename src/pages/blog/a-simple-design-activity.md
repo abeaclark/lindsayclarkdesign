@@ -1,6 +1,6 @@
 ---
 title: A simple design activity
-date: "2018-01-17"
+date: "2018-01-13"
 path: "/blog/a-simple-design-activity/"
 image: "/media/hills-min.png"
 ---
