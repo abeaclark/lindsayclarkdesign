@@ -28,7 +28,7 @@ const Header = () =>
     css={{...styles.outer }}
     to="/"
   >
-    lindsay s. clark
+    lindsay clark design
   </Link>
 
 export default Header
