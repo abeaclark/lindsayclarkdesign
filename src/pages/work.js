@@ -9,6 +9,8 @@ import TOC from 'baseComponents/toc'
 import sunset from 'media/sunset-min.png'
 import krasa from 'media/work/krasa.png'
 import oncallogy from 'media/work/oncallogy.png'
+import minutewithmads from 'media/work/minutewithmads.png'
+import saltphoto from 'media/work/saltphoto.png'
 
 const styles = {
   img: {
@@ -27,8 +29,10 @@ class Prints extends React.Component {
           image={sunset}
           pathname={this.props.location && this.props.location.pathname}
         />
-        <img src={krasa} css={styles.img} />
         <img src={oncallogy} css={styles.img} />
+        <img src={minutewithmads} css={styles.img} />
+        <img src={krasa} css={styles.img} />
+        <img src={saltphoto} css={styles.img} />
       </div>
     )
   }
